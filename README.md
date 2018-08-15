@@ -9,10 +9,10 @@
 This is a pig latin translator. User inputs a string of text in English and the application will return the text in Pig Latin.
 
 ### Behavior Driven Development Specifications
-
+<!--
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
     * Example Input: 3
-    * Example Output: 3
+    * Example Output: 3 -->
 * The program adds "ay" to single-letter words beginning with a vowel.
     * Example Input: i
     * Example Output: iay
