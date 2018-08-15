@@ -6,13 +6,19 @@ var ay = "ay";
 var way = "way";
 
 var pigLatin = function(userInput) {
+  var firstLetter = userInput.charAt(0);
   if ((userInput.length === 1) && (vowels.includes(userInput))) {
     var combinedWord = userInput.concat(ay);
     return combinedWord;
-} else if ((userInput.length > 1) && (vowels.includes(userInput.charAt(0)))) {
+} else if ((userInput.length > 1) && (vowels.includes(firstLetter))) {
     var combinedWord = userInput.concat(way);
     return combinedWord;
-} else {
+} else if (consonants.includes(firstLetter)) {
+    var wordEnd = userInput.slice(1, userInput.length);
+    var combinedWord = wordEnd + firstLetter + ay;
+    return combinedWord;
+}
+  else {
     return userInput;
 }
 }

@@ -16,9 +16,9 @@ This is a pig latin translator. User inputs a string of text in English and the 
 <!-- * The program adds "ay" to single-letter words beginning with a vowel.
     * Example Input: i
     * Example Output: iay -->
-* The program adds “way” to multi-letter words beginning with a vowel.
-    * Example Input: apple
-    * Example Output: appleway
+<!-- * The program adds “way” to multi-letter words beginning with a vowel.
+    <!-- * Example Input: apple
+    * Example Output: appleway --> -->
 *  The program moves a single consonant from the beginning of a word to the end and adds “ay”.
     * Example Input: cook
     * Example Output: ookcay
