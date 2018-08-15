@@ -7,7 +7,7 @@ var way = "way";
 
 var pigLatin = function(userInput) {
   var firstLetter = userInput.charAt(0);
-  var secondLetter = userInput.charAt(1);
+  //var secondLetter = userInput.charAt(1);
   for (var i = 0; i < userInput.length; i += 1) {
     if (vowels.includes(userInput.charAt(i))) {
       var firstVowelPosition = i;
@@ -20,6 +20,11 @@ var pigLatin = function(userInput) {
 
   if ((userInput.length === 1) && (firstVowelPosition === 0)) {
     var combinedWord = userInput.concat(ay);
+    return combinedWord;
+} else if (wordBeg.includes("q")){
+    var qWordEnd = userInput.slice((firstVowelPosition+1), userInput.length);
+    var qWordBeg = userInput.slice(0, (firstVowelPosition+1));
+    var combinedWord = qWordEnd + qWordBeg + ay;
     return combinedWord;
 } else if ((userInput.length > 1) && (firstVowelPosition === 0)) {
     var combinedWord = userInput.concat(way);
