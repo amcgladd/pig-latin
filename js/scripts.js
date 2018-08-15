@@ -7,21 +7,31 @@ var way = "way";
 
 var pigLatin = function(userInput) {
   var firstLetter = userInput.charAt(0);
-  if ((userInput.length === 1) && (vowels.includes(userInput))) {
+  var secondLetter = userInput.charAt(1);
+  for (var i = 0; i < userInput.length; i += 1) {
+    if (vowels.includes(userInput.charAt(i))) {
+      var firstVowelPosition = i;
+      break;
+    }
+  }
+  var wordEnd = userInput.slice(firstVowelPosition, userInput.length);
+  var wordBeg = userInput.slice(0, firstVowelPosition);
+
+
+  if ((userInput.length === 1) && (firstVowelPosition === 0)) {
     var combinedWord = userInput.concat(ay);
     return combinedWord;
-} else if ((userInput.length > 1) && (vowels.includes(firstLetter))) {
+} else if ((userInput.length > 1) && (firstVowelPosition === 0)) {
     var combinedWord = userInput.concat(way);
     return combinedWord;
 } else if (consonants.includes(firstLetter)) {
-    var wordEnd = userInput.slice(1, userInput.length);
-    var combinedWord = wordEnd + firstLetter + ay;
+    var combinedWord = wordEnd + wordBeg + ay;
     return combinedWord;
+}  else {
+      return userInput;
 }
-  else {
-    return userInput;
 }
-}
+
 
 
 

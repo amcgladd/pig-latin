@@ -19,15 +19,15 @@ This is a pig latin translator. User inputs a string of text in English and the 
 <!-- * The program adds “way” to multi-letter words beginning with a vowel.
     <!-- * Example Input: apple
     * Example Output: appleway --> -->
-*  The program moves a single consonant from the beginning of a word to the end and adds “ay”.
+<!-- *  The program moves a single consonant from the beginning of a word to the end and adds “ay”.
     * Example Input: cook
-    * Example Output: ookcay
-* The program moves two consonants from the beginning of a word to the end and adds “ay”.
+    * Example Output: ookcay -->
+<!-- * The program moves two consonants from the beginning of a word to the end and adds “ay”.
     * Example Input: stool
-    * Example Output: oolstay
-* The program moves three consonants from the beginning of a word to the end and adds “ay”.
+    * Example Output: oolstay -->
+<!-- * The program moves three consonants from the beginning of a word to the end and adds “ay”.
     * Example Input: strap
-    * Example Output: apstray
+    * Example Output: apstray -->
 * The program moves “qu” at the beginning of a word to the end and adds “ay”.
     * Example Input: quail
     * Example Output: ailquay
