@@ -37,7 +37,7 @@ This is a pig latin translator. User inputs a string of text in English and the 
 <!-- * The program treats words beginning with a “y” as a consonant.
     * Example Input: yak
     * Example Output: akyay -->
-<!-- * The program treats “y” in a word whose sound is a vowel sound as a vowel.
+<!-- * The program treats “y” inside a word as a vowel.
     * Example Input: mystery
     * Example Output: ysterymay -->
 * The program can perform logic on strings containing multiple words.
